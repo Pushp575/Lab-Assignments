@@ -1,37 +1,30 @@
-#include<iostream>
+//Bubble sort
+#include <iostream>
 
 using namespace std;
 
-int main(){
-  int arr[100],n;
+int main()
+{
+  int array[10]={1,209,385,56,96,7,8,9,10};
+  int n=10;
 
-  cout<<"Enter the number of elements: ";
-  cin>>n;
-
-  cout<<"Enter the array elements"<<endl;
-  for(int i=0;i<n;i++)
+  for(int i=0;i<n-1;i++)
   {
-    cin>>arr[i];
-  }
-
-  for(int i=0;i<n;i++)
-  {
-    for(int j= i+1;j<n;){
-      if(arr[i]==arr[j]){
-        for(int k=j;k<n-1;k++){
-          arr[k]=arr[k+1];
-        }
-        n--;
-      }
-      else{
-        j++;
+    for(int j=0;j<n-i-1;j++)
+    {
+      if(array[j]>array[j+1])
+      {
+        int temp=array[j];
+        array[j]=array[j+1];
+        array[j+1]=temp;
       }
     }
   }
-  cout<<"Array after removing duplication"<<endl;
+  cout<<"Sorted Array"<<endl;
   for(int i=0;i<n;i++)
   {
-    cout<<arr[i]<<" ";
+    cout<< array[i] <<" ";
   }
+  cout<<endl;
   return 0;
 }
