@@ -1,3 +1,4 @@
+//Upper-triangular matrix-->
 #include<iostream>
 
 using namespace std;
@@ -32,4 +33,5 @@ int main()
     }
     cout<<endl;
   }
+
 }
