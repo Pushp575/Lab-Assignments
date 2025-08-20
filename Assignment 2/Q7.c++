@@ -1,3 +1,4 @@
+//Inversion -->
 #include <iostream>
 using namespace std;
 
@@ -20,3 +21,4 @@ int main() {
     cout << "Number of inversions = " << count << endl;
     return 0;
 }
+
