@@ -1,3 +1,4 @@
+//Distinct Elements -->
 #include <iostream>
 using namespace std;
 
@@ -23,3 +24,4 @@ int main() {
     cout << "Total distinct elements: " << count << endl;
     return 0;
 }
+
